@@ -93,6 +93,7 @@ a:hover .icons-2 {
 }
 
 .footer-nav {
+
   display: flex;
   gap: 50px;
   position: fixed;
