@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+:root {
+  --main-color: #5f9ea0;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -12,7 +16,7 @@ header {
   width: 100%;
   margin: 0;
   height: 50px;
-  background-color: cadetblue;
+  background-color: var(--main-color);
 }
 
 h1 {
@@ -30,9 +34,9 @@ h1 {
   position: relative;
   border-radius: 10px;
   width: 50%;
-  background-color: cadetblue;
-  padding: 20px;
-  margin: 70px auto;
+  background-color: var(--main-color);
+  padding: 10px auto;
+  margin: 50px auto;
   border: 2px solid black;
   display: flex;
   flex-direction: column;
@@ -114,7 +118,7 @@ a:hover .icons-2 {
   margin: 10;
   padding: 10;
   height: 50px;
-  background-color: cadetblue;
+  background-color: var(--main-color);
   stroke: aliceblue;
 }
 .footer-nav a:hover svg {
