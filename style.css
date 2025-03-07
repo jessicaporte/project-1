@@ -49,6 +49,10 @@ body {
   padding: 0;
 }
 
+main {
+  margin: 100px 0;
+}
+
 h2 {
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
