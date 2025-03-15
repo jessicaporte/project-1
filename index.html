@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleprofile.css" />
+    <link rel="stylesheet" href="./card.html" />
+    <script src="index.js" type="module"></script>
 
     <title>Document</title>
   </head>
@@ -14,26 +17,31 @@
 
     <main>
       <section class="question-card">
-        <h2>
+        <h2 data-js="question" class="h2">
           What is the name of the first Marvel Cinematic Universe film, released
           in 2008?
         </h2>
 
-        <button class="answer-button" type="show answer">show answer</button>
+        <button class="answer-button" data-js="showAnswer" class="button">
+          show answer
+        </button>
+
+        <h3 class="answer-hidden" data-js="answer1">Iron Man</h3>
 
         <div class="tags">
-          <span>#html</span>
-          <span>#flexbox</span>
-          <span>#css</span>
+          <span data-js="span">#html </span>
+          <span data-js="span">#flexbox</span>
+          <span data-js="span">#css</span>
         </div>
         <a aria-label="button-icons">
           <svg
-            class="icons-1"
+            class="icons"
+            data-js="bookmark-1"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            viewBox="00 24 24"
-            fill="none"
+            viewBox="0 0 24 24"
+            fill=""
             stroke="currentColor"
             stroke-width="2"
             stroke-linecap="round"
@@ -51,7 +59,8 @@
           in the MCU?
         </h2>
         <h3 hidden>answer</h3>
-        <button class="answer-button" type="show answer">show answer</button>
+        <button class="answer-button" data-js="showAnswer2">show answer</button>
+        <h3 class="answer-hidden" data-js="answer2">nose</h3>
 
         <div class="tags">
           <span>#html</span>
@@ -61,6 +70,7 @@
         <a aria-label="button-icons" class="icons-2">
           <svg
             class="icons"
+            data-js="bookmark-2"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -70,6 +80,7 @@
             stroke-linecap="round"
             stroke-linejoin="round"
             class="lucide lucide-bookmark"
+            fill="none"
           >
             <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
           </svg>
@@ -78,7 +89,8 @@
       <section class="question-card">
         <h2>hola?</h2>
         <h3 hidden>answer</h3>
-        <button class="answer-button" type="show answer">show answer</button>
+        <button class="answer-button" data-js="showAnswer3">show answer</button>
+        <h3 class="answer-hidden" data-js="answer3">como estas</h3>
 
         <div class="tags">
           <span>#html</span>
@@ -88,6 +100,7 @@
         <a aria-label="button-icons" class="icons-2">
           <svg
             class="icons"
+            data-js="bookmark-3"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -133,8 +146,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            viewBox="0
-              0 24 24"
+            viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             stroke-width="2"
@@ -144,14 +156,31 @@
             <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
           </svg>
         </a>
+        <a aria-label="card" href="./card.html" class="footer-link">
+          <svg
+            class="footer-icons"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <path d="M8 12h8" />
+            <path d="M12 8v8" />
+          </svg>
+        </a>
         <a aria-label="profile" class="footer-link" href="./profile.html">
           <svg
             class="footer-icons"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            viewBox="0
-              0 24 24"
+            viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             stroke-width="2"
