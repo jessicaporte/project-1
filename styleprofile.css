@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+:root {
+  --main-color: #5f9ea0;
+}
+
+.dark-mode {
+  background-color: black; /* Fondo oscuro */
+
+  color: white;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row-reverse;
+}
+.small-image {
+  width: 150px;
+  height: 150px auto;
+  position: relative;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  flex-direction: flex-start;
+  margin-left: 20px;
+}
+
+.h1-profile {
+  position: relative;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20;
+  text-align: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.about-me {
+  position: relative;
+  top: 10px;
+  border-radius: 10px;
+  width: auto;
+  background-color: var(--main-color);
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  word-wrap: break-word;
+}
+.h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.p {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  width: 95%;
+}
+.stats-container {
+  display: flex;
+  position: relative;
+  gap: 40px;
+  margin: 10px auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+
+.stat-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
+  position: relative;
+  background-color: var(--main-color);
+}
+.emoji-circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.emoji-bookmark {
+  width: 40px;
+  height: 40px;
+}
+.signal-emoji {
+  font-size: 40px;
+}
+.stat-number {
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  width: auto;
+  margin-top: 100px;
+  position: relative;
+  width: 50%;
+  margin: 0;
+
+  height: 50px;
+}
+
+.dark-mode-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 100px; /* Limita el ancho para que no se estire demasiado */
+  padding: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.switch {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  position: relative;
+}
+.slider {
+  display: block;
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 25px;
+  position: relative;
+}
+
+/* Círculo interior */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3.5px;
+  background-color: black; /* Color del círculo */
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* Cuando se activa el interruptor */
+input:checked + .slider {
+  background-color: var(--main-color); /* Color cuando está encendido */
+}
+
+/* Mueve el círculo al activarse */
+input:checked + .slider::before {
+  transform: translateX(24px);
+}
+.dark-mode {
+  background-color: black; /* Fondo oscuro */
+  color: white;
+}
