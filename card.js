@@ -1,3 +1,10 @@
+const textArea1 = document.querySelector("[data-js='textArea1']");
+const remainingCharacters1 = document.querySelector(
+  "[data-js='remaining-characters1']"
+);
+textArea1.addEventListener("input", (event) => {
+  remainingCharacters1.textContent = 150 - event.target.value.length;
+});
 const textArea2 = document.querySelector("[data-js='textArea2']");
 const remainingCharacters2 = document.querySelector(
   "[data-js='remaining-characters2']"
