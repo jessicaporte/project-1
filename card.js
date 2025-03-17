@@ -1,22 +1,3 @@
-/*const productHTML = `<main>
-      <section class="question-card">
-        <h2 data-js="question" class="h2">
-          What is the name of the first Marvel Cinematic Universe film, released
-          in 2008?
-        </h2>
-
-        <button class="answer-button" data-js="showAnswer" class="button">
-          show answer
-        </button>
-
-        <h3 class="answer-hidden" data-js="answer1" class="h3">Iron Man</h3>
-
-        <div class="tags">
-          <span data-js="span">#html </span>
-          <span data-js="span">#flexbox</span>
-          <span data-js="span">#css</span>
-        </div>`; */
-
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (event) => {
@@ -40,11 +21,11 @@ form.addEventListener("submit", (event) => {
   answerButtonElement.textContent = "Show Answer";
 
   const yourAnswerElement = document.createElement("h3");
-  yourAnswerElement.className = "h3 answer-hidden";
+  yourAnswerElement.className = "answer-hidden";
   yourAnswerElement.textContent = data.answer;
 
   const tagElement = document.createElement("span");
-  tagElement.className = "tag";
+  tagElement.className = "tags";
   tagElement.textContent = data.tag;
 
   cardElement.append(yourQuestionElement);

@@ -9,7 +9,10 @@
 
 .dark-mode {
   background-color: black; /* Fondo oscuro */
-
+  color: white;
+}
+.dark-mode h1 {
+  background-color: black;
   color: white;
 }
 
