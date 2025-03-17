@@ -46,3 +46,6 @@
 .submit-button:hover {
   background-color: cornflowerblue;
 }
+.remaining-characters {
+  text-align: right;
+}

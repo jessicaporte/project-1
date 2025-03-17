@@ -1,0 +1,14 @@
+.icons {
+  stroke: black;
+  fill: transparent;
+}
+.bookmarked {
+  fill: black;
+}
+
+.answer-hidden {
+  display: none;
+}
+.answer-show {
+  display: flex;
+}

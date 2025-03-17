@@ -17,13 +17,22 @@
       <div class="container">
         <form>
           <label for="yourquestion" class="label" >Your question:</label>
-          <textarea type="text" id="yourquestion" name="question"  class="input"></textarea>
+          <textarea type="text" id="yourquestion" name="question"  class="input" data-js ="textArea1"></textarea>
+          <p class="remaining-characters">
+            <span data-js="remaining-characters1">150</span>/150
+          </p>
 
           <label for="youranswer" class="label" >Your answer:</label>
-          <textarea type="text" id="youranswer" name="answer"  class="input"></textarea>
+          <textarea type="text" id="youranswer" name="answer"  class="input" data-js ="textArea2"></textarea>
+          <p class="remaining-characters">
+            <span data-js="remaining-characters2">150</span>/150
+          </p>
 
           <label for="tag" class="label" >tag:</label>
-          <textarea type="text" id="tag" name="tag"  class="input"></textarea>
+          <textarea type="text" id="tag" name="tag"  class="input" data-js ="textArea3"></textarea>
+          <p class="remaining-characters">
+            <span data-js="remaining-characters3">150</span>/150
+          </p>
 
           <button class="submit-button" type="submit">Submit</button>
         </form>

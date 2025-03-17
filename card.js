@@ -1,3 +1,19 @@
+const textArea2 = document.querySelector("[data-js='textArea2']");
+const remainingCharacters2 = document.querySelector(
+  "[data-js='remaining-characters2']"
+);
+textArea2.addEventListener("input", (event) => {
+  remainingCharacters2.textContent = 150 - event.target.value.length;
+});
+
+const textArea3 = document.querySelector("[data-js='textArea3']");
+const remainingCharacters3 = document.querySelector(
+  "[data-js='remaining-characters3']"
+);
+textArea3.addEventListener("input", (event) => {
+  remainingCharacters3.textContent = 150 - event.target.value.length;
+});
+
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (event) => {

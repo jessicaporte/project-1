@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bookmark.css" />
+    <script src="bookmarks.js" type="module"></script>
 
     <title>Document</title>
   </head>
@@ -16,21 +18,25 @@
     <main>
       <section class="question-card">
         <h2>
-          What is the name of the powerful artifact that Thanos seeks to collect
-          in the MCU?
+          What is the smallest country by land area?
         </h2>
 
-        <h3 hidden>answer</h3>
-        <button class="answer-button" type="show answer">show answer</button>
+        
+        <button class="answer-button" type="show answer" data-js="showAnswer">show answer</button>
+
+        <h3 hidden class="answer-hidden" data-js="answer2">
+          Vatican City (covering only 44 hectares).
+        
+        </h3>
 
         <div class="tags">
           <span>#html</span>
           <span>#flexbox</span>
           <span>#css</span>
         </div>
-        <a aria-label="button-icons" class="icons-2">
+        <a aria-label="button-icons" class="icons" >
           <svg
-            class="icons"
+            class="icons" data-js="bookmark-4"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
