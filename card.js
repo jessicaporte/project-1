@@ -64,3 +64,9 @@ form.addEventListener("submit", (event) => {
 
   form.reset();
 });
+
+textArea3.addEventListener("input", () => {
+  if (!textArea3.value.startsWith("#")) {
+    textArea3.value = "#" + textArea3.value;
+  }
+});
